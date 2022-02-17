@@ -1,3 +1,10 @@
+---
+title: "백준 2557번"
+date: 2022-02-18 02:57:18 -0400
+categories: 백준
+published: true
+---
+
 '''cpp
 #include <iostream>
 using namespace std;
@@ -7,3 +14,4 @@ int main()
   cout << "Hello World!";
 }
 '''
+c++로 문제를 풀었으며 기본적인 출력에 관한 문제이다.
