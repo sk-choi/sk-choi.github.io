@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name             : "sk-choi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "보노보노.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "오늘 배운 것을 기록하는 공간 "
   location         : "Seoul, Korea"
   email            :
