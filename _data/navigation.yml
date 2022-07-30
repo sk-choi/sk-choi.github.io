@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/ #나중에 검색기능 추가
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -11,14 +11,14 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
--title: "category"
-  chidren:
-    -title: "Algorithm"
-      url: "/algorithm"
-    -title: "Data_Structure"
-      url:  "/data_structure"
-    -title: "Computer Science"
-      url:  "/computer_science"
-    title: "BOOT_CAMP"
-      url: "/boot_camp"
+  - title: "category"
+    chidren:
+      - title: "Algorithm"
+        url: "/algorithm"
+      - title: "Data_Structure"
+        url:  "/data_structure"
+      - title: "Computer Science"
+        url:  "/computer_science"
+      - title: "BOOT_CAMP"
+        url: "/boot_camp"
     

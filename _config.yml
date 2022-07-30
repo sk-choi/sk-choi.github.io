@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/sk-choi"
+      url: "https://github.com/sk-choi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -139,8 +139,8 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
-      icon: "https://github.com/sk-choi"
-      # url:
+      icon: "fab fa-fw fa-github-square"
+      url: https://github.com/sk-choi
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
