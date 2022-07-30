@@ -10,3 +10,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sidebar-category:
+-title: "category"
+  chidren:
+    -title: "Algorithm"
+      url: "/algorithm"
+    -title: "Data_Structure"
+      url:  "/data_structure"
+    -title: "Computer Science"
+      url:  "/computer_science"
+    title: "BOOT_CAMP"
+      url: "/boot_camp"
+    
