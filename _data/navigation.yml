@@ -12,7 +12,7 @@ main:
   #   url: /sitemap/
 sidebar-category:
   - title: "category"
-    chidren:
+    children:
       - title: "Algorithm"
         url: "/algorithm"
       - title: "Data_Structure"
