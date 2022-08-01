@@ -20,7 +20,7 @@ title                    : "Today I Learned"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "sk-choi"
-description              : "Recording about today I learned"
+description              : "Recording about Today I learned"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
