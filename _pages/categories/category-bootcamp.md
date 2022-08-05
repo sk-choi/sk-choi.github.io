@@ -1,7 +1,7 @@
 ---
 title: "BOOT_CAMP"
 layout: archive
-permalink: categories/BOOT_CAMP
+permalink: categories/boot_camp
 author_profile: true
 sidebar_main: true
 ---
