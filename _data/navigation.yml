@@ -19,6 +19,10 @@ sidebar-category:
         url:  categories/data_structure
       - title: "Computer_Science"
         url:  categories/computer_science
+        - title: "Computer_Network"
+          url: categories/computer_science/computer_network
+        - title: "Computer_System"
+          url: categories/computer_science/computer_system
       - title: "BOOT_CAMP"
         url: categories/boot_camp
     
