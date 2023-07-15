@@ -19,6 +19,7 @@ sidebar-category:
         url:  categories/data_structure
       - title: "Computer_Science"
         url:  categories/computer_science
+        chilren:
         - title: "Computer_Network"
           url: categories/computer_science/computer_network
         - title: "Computer_System"
