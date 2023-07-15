@@ -126,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;                // 추가된 코드입니다.
+
   &:focus {
     @extend %tab-focus;
   }
@@ -139,6 +141,21 @@ a {
     outline: 0;
   }
 }
+
+// a {
+//   &:focus {
+//     @extend %tab-focus;
+//   }
+
+//   &:visited {
+//     color: $link-color-visited;
+//   }
+
+//   &:hover {
+//     color: $link-color-hover;
+//     outline: 0;
+//   }
+// }
 
 /* buttons */
 
