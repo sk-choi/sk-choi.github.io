@@ -17,13 +17,12 @@ sidebar-category:
         url: categories/algorithm
       - title: "Data_Structure"
         url:  categories/data_structure
-      - title: "Computer_Science"
-        url:  categories/computer_science
-        chilren:
-        - title: "Computer_Network"
-          url: categories/computer_science/computer_network
-        - title: "Computer_System"
-          url: categories/computer_science/computer_system
+      - title: "Computer_Network"
+        url:  categories/computer_network
+      - title: "Computer_System"
+        url: categories/computer_system
       - title: "BOOT_CAMP"
         url: categories/boot_camp
+      - title: "Books"
+        url: categories/books
     
