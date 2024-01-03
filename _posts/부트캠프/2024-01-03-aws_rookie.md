@@ -7,17 +7,17 @@ tags :
 - [AWS] #소문자만 가능
 published : true
 #permalink : categories/boot_camp
+header:
+  teaser: https://i.namu.wiki/i/7iQCxJY8pJVWI8qCWU-hqOzO2XCaGwXLJaitRa3Yqdcp-T3lkOP508aVkVB4So2AprnWFS4jyfbzewSED0OkvA.webp
 
 toc: true
 toc_sticky: true
 
-header:
-  teaser: (https://i.namu.wiki/i/7iQCxJY8pJVWI8qCWU-hqOzO2XCaGwXLJaitRa3Yqdcp-T3lkOP508aVkVB4So2AprnWFS4jyfbzewSED0OkvA.webp)
 ---
 
 # intro   
      
-![img](https://i.namu.wiki/i/7iQCxJY8pJVWI8qCWU-hqOzO2XCaGwXLJaitRa3Yqdcp-T3lkOP508aVkVB4So2AprnWFS4jyfbzewSED0OkvA.webp)
+![img](https://i.namu.wiki/i/7iQCxJY8pJVWI8qCWU-hqOzO2XCaGwXLJaitRa3Yqdcp-T3lkOP508aVkVB4So2AprnWFS4jyfbzewSED0OkvA.webp){: width="700" height="700"}
 
 이 글은 AWS Rookie Championship에 참여한 후기를 작성한 글입니다.    
 
@@ -35,7 +35,7 @@ header:
 
 # 우리가 정했던 주제   
      
-![ontology](https://github.com/sk-choi/sk-choi.github.io/assets/80041090/f8969066-e62d-4306-8066-ab597a6aec72)      
+![ontology](https://github.com/sk-choi/sk-choi.github.io/assets/80041090/f8969066-e62d-4306-8066-ab597a6aec72){: width="700" height="500"}      
 
 팀 이름은 "Ontology"로 정하게 되었는데, 사실 구체적으로 어떤 의미가 있다기 보다는 제가 전공이 철학과라서 어떤 팀원 분이 철학적으로 멋진 단어가 있냐고 물어봐주셔서   
 온톨로지 어떠냐고 대답했더니 흔쾌히 좋다고 얘기를 하셔서 팀명이 정해지게 되었습니다...     
