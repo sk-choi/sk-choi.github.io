@@ -23,6 +23,7 @@ sidebar-category:
         url: categories/computer_system
 
   - title: "Activities"
+    children:
       - title: "BOOT_CAMP"
         url: categories/boot_camp
       - title: "Books"
