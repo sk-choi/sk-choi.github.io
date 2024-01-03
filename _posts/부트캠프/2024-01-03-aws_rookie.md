@@ -10,6 +10,9 @@ published : true
 
 toc: true
 toc_sticky: true
+
+header:
+  teaser: (https://i.namu.wiki/i/7iQCxJY8pJVWI8qCWU-hqOzO2XCaGwXLJaitRa3Yqdcp-T3lkOP508aVkVB4So2AprnWFS4jyfbzewSED0OkvA.webp)
 ---
 
 # intro   
