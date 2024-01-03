@@ -11,7 +11,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
-  - title: "category"
+  - title: "Computer_Science"
     children:
       - title: "Algorithm"
         url: categories/algorithm
@@ -21,6 +21,8 @@ sidebar-category:
         url:  categories/computer_network
       - title: "Computer_System"
         url: categories/computer_system
+
+  - title: "Activities"
       - title: "BOOT_CAMP"
         url: categories/boot_camp
       - title: "Books"
