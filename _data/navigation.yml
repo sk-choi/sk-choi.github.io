@@ -21,6 +21,9 @@ sidebar-category:
         url:  categories/computer_network
       - title: "Computer_System"
         url: categories/computer_system
+      - title: "Database"
+        url: categories/database
+
 
   - title: "Activities"
     children:
