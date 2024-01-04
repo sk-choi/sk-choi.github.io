@@ -7,4 +7,5 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap'); // Nanum_Gothic_Coding
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap'); // Gothic_A1
+//@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap'); // Nanum_Gothic_Coding
