@@ -11,6 +11,13 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
+  - title: "Languages"
+    children:
+      - title: "C"
+        url: "categories/c"
+      - title: "C++"
+        url: "categories/cpp"
+
   - title: "Computer_Science"
     children:
       - title: "Algorithm"
@@ -23,7 +30,6 @@ sidebar-category:
         url: categories/computer_system
       - title: "Database"
         url: categories/database
-
 
   - title: "Activities"
     children:
