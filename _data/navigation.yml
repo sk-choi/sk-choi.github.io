@@ -30,6 +30,15 @@ sidebar-category:
         url: categories/computer_system
       - title: "Database"
         url: categories/database
+  
+  - title: "Web"
+    children:
+      - title: "HTML"
+        url: categories/html
+      - title: "CSS"
+        url: categories/css
+      - title: "Javascript"
+        url: categories/javascript
 
   - title: "Activities"
     children:
