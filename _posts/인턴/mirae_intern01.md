@@ -4,7 +4,7 @@ date : 2024-04-16 07:58:30 +/-TTTT
 categories : 
 - Intern
 tags : 
-- [C언어] #소문자만 가능
+- [인턴] #소문자만 가능
 published : true
 
 
