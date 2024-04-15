@@ -17,6 +17,10 @@ sidebar-category:
         url: "categories/c"
       - title: "C++"
         url: "categories/cpp"
+      - title: "Java"
+        url: "categories/java"
+      - title: "Python"
+        url: "categories/python" 
 
   - title: "Computer_Science"
     children:
@@ -44,6 +48,8 @@ sidebar-category:
     children:
       - title: "BOOT_CAMP"
         url: categories/boot_camp
+      - title: "Intern"
+        url: categories/intern
       - title: "Books"
         url: categories/books
     
