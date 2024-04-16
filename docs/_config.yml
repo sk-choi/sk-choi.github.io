@@ -235,6 +235,7 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
+      sidebar_main: true
   # _recipes
   - scope:
       path: ""
