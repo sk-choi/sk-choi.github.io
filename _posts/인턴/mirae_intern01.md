@@ -97,13 +97,3 @@ IntelliJ라는 개발환경도 이 때 처음 다루게 되었다.
 잘 할 수 있겠지...?
 
 &nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
