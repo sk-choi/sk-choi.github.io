@@ -1,12 +1,10 @@
 ---
 title : "미래내일 일경험 인턴 1일차"
 date : 2024-04-16 07:58:30 +/-TTTT
-categories : 
-- Intern
-tags : 
-- [인턴] #소문자만 가능
+categories : Intern
+tags : [인턴] #소문자만 가능
 published : true
-#permalink : categories/data_structure
+#permalink : categories/intern
 
 #header :
   #teaser : 

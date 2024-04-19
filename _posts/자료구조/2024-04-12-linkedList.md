@@ -53,4 +53,9 @@ c언어에서는 이러한 링크드 리스트를 구현하기 위해서 구조�
 
 구현 예시는 아래의 링크를 참고 바란다.
 
-[https://sk-choi.github.io/data_structure/linkedList-gpt/](https://sk-choi.github.io/data_structure/linkedList-gpt/ "링크드 리스트 구현 첫 번째")
+[링크드 리스트 구현 첫 번째](https://sk-choi.github.io/data_structure/linkedList-gpt/)   
+
+
+[링크드 리스트 완전 구현(C언어)](https://sk-choi.github.io/data_structure/linkedList_compt/)
+
+

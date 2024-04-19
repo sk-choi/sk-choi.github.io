@@ -6,7 +6,7 @@ categories :
 tags : 
 - [인턴] #소문자만 가능
 published : true
-#permalink : categories/data_structure
+#permalink : categories/internship
 
 #header :
   #teaser : 
