@@ -3,7 +3,8 @@ title: "C"
 layout: archive
 permalink: categories/c
 author_profile: true
-sidebar_main: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

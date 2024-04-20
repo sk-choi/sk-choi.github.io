@@ -3,7 +3,8 @@ title: "Database"
 layout: archive
 permalink: categories/database
 author_profile: true
-sidebar_main: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

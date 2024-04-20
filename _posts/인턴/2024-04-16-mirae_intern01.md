@@ -11,6 +11,8 @@ published : true
 
 toc: true
 toc_sticky: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 ### Intro

@@ -3,7 +3,8 @@ title: "Intern"
 layout: archive
 permalink: categories/internship
 author_profile: true
-sidebar_main: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

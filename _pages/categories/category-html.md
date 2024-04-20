@@ -3,7 +3,8 @@ title: "HTML"
 layout: archive
 permalink: categories/html
 author_profile: true
-sidebar_main: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

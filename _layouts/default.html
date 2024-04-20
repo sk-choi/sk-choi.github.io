@@ -9,9 +9,16 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <!--스크롤바 기능 안보이게-->
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      ::-webkit-scrollbar
+      {
+        display: none; 
+      } 
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
