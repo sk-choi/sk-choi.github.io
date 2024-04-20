@@ -1,6 +1,6 @@
 ---
-title : "미래내일 일경험 인턴 3일차"
-date : 2024-04-18 02:58:30 +/-TTTT
+title : "미래내일 일경험 인턴 4일차"
+date : 2024-04-20 22:01:23 +/-TTTT
 categories : 
 - Intern
 tags : 
