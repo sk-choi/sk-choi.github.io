@@ -1,5 +1,5 @@
 ---
-title : "미래내일 일경험 인턴 4일차"
+title : "미래내일 일경험 인턴 기록03"
 date : 2024-04-20 22:01:23 +/-TTTT
 categories : 
 - Intern

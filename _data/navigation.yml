@@ -35,6 +35,13 @@ sidebar-category:
       - title: "Database"
         url: categories/database
   
+  - title: "Data & AI"
+    children:
+      - title: "Data_Analysis"
+        url: categories/data_analysis
+      - title: "AI"
+        url: categories/ai
+
   - title: "Web"
     children:
       - title: "HTML"
