@@ -1,5 +1,5 @@
 ---
-title : "미래내일 일경험 인턴 기록1-"
+title : "미래내일 일경험 인턴 기록10"
 date : 2024-05-31 00:15:30 +/-TTTT
 categories : 
 - Intern
