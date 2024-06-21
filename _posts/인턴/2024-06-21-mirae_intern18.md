@@ -85,6 +85,7 @@ DB에 있는 가장 최근의 날짜가 오늘 날짜랑 같으면 오늘 날짜
 
 [스트림릿 프로펫 에러 해결 참고](https://chaeso-coding.tistory.com/65)
 
-위의 링크를 참고해서 `<span style="color: #abb2bf;">pip install protobuf==</span><span style="color: #d19a66;">3.19</span><span style="color: #d19a66;">.0</span>`를 실행했더니 잘 실행되었다.
+위의 링크를 참고해서 `pip install protobuf==3.19.0`를 실행했더니 잘 실행되었다.
+
 
 &nbsp;
