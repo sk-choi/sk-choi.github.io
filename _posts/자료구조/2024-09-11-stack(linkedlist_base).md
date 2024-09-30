@@ -66,7 +66,7 @@ void createStack(LLStack** Stack){
     // 스택을 자유 저장소에 저장
     (*Stack) = (LLStack*)malloc(sizeof(LLStack));
     (*Stack)->List = NULL;
-    (*Stack)->List = NULL;
+    (*Stack)->Top = NULL;
 }
 ```
 
@@ -260,7 +260,7 @@ void createStack(LLStack** Stack){
     // 스택을 자유 저장소에 저장
     (*Stack) = (LLStack*)malloc(sizeof(LLStack));
     (*Stack)->List = NULL;
-    (*Stack)->List = NULL;
+    (*Stack)->Top = NULL;
 }
 
 int LLS_isEmpty(LLStack* Stack){
@@ -338,7 +338,6 @@ int LLS_size(LLStack* Stack){
 int main(void){
     
     int i = 0;
-    int count = 0;
     Node* Popped;
     
     LLStack* Stack;
@@ -349,8 +348,7 @@ int main(void){
     LLS_Push(Stack, createNode(3));
     LLS_Push(Stack, createNode(4));
     
-    count = LLS_size(Stack);
-    printf("Size: %d, Top: %d\n", count, LLS_Top(Stack)->data);
+    printf("Size: %d, Top: %d\n", LLS_size(Stack), LLS_Top(Stack)->data);
     
     Popped = LLS_Pop(Stack);
     
@@ -358,7 +356,7 @@ int main(void){
     
     destroyNode(Popped);
     
-    printf("Size: %d, Top: %d\n", count, LLS_Top(Stack)->data);
+    printf("Size: %d, Top: %d\n", LLS_size(Stack), LLS_Top(Stack)->data);
     
 }
 ```
@@ -367,8 +365,18 @@ int main(void){
 
 이 부분을 어떻게 수정할 지 고민해봐야겠다.
 
+**수정 사항** : 알고보니 createStack함수와 main함수에 오류가 있었다. 오류 사항은 다시 수정했고 결과도 정상적으로 출력되었다.
+
+`createStack()`에서 `Stack->List = NULL`이 두 개 있어서 하나를 `Stack->Top = NULL`로 바꿔주었다.
+
+**출력 결과:**
+
+> Size: 4, Top: 4  
+> Popped: 4  
+> Size: 3, Top: 3
+
 * * *
 
 ### 알게 된 점
 
-배열의 경우 인덱스를 알고 있다면 시간복잡도를 O(1)수준으로 줄일 수 있지만, 링크드 리스트의 경우 그렇지 못하고, 일일이 원하는 위치까지 탐색을 진행하기 때문에 O(n)의 시간복잡도를 가질 수 밖에 없다.
+배열의 경우 인덱스를 알고 있다면 시간복잡도를 O(1)수준으로 줄일 수 있지만, 링크드 리스트의 경우 그렇지 못하고, 일일이 원하는 위치까지 탐색을 진행하기 때문에 O(n)의 시간복잡도를 가질 수 밖에 없다. 이 점을 해결하기 위해서 Top 포인터를 통해 최상위 노드에 대한 접근 시간을 단축할 수 있다.
