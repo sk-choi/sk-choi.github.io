@@ -1,5 +1,5 @@
 ---
-title : "정렬 알고리즘(버블, 선택, 삽입)"
+title : "퀵 정렬(Quick sort)과 qsort"
 date : 2024-10-17 14:47:30 +/-TTTT
 categories : 
 - Algorithm
