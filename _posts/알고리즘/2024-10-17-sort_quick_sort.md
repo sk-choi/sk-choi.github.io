@@ -212,6 +212,8 @@ void qsort(
 
 base는 정렬할 대상의 배열 주소, num은 전체 배열의 크기, width는 배열 자료형의 개별 크기, 마지막은 비교 함수의 결과를 반환한다.
 
+비교 함수에 대한 포인터는 [함수 포인터에 관한 이전 포스트](https://sk-choi.github.io/c/%ED%95%A8%EC%88%98_%ED%8F%AC%EC%9D%B8%ED%84%B0_void_%ED%8F%AC%EC%9D%B8%ED%84%B0/)를 참고하도록 하자.
+
 * * *
 
 ### 비교 함수(compare)의 구조
