@@ -21,7 +21,9 @@ sidebar:
 
 ### RANK()
 **RANK() OVER ORDER BY 옵션**
+
 동등한 순위가 있으면 그 다음 순위는 동등한 순위가 나온만큼의 횟수를 더한 순위
+
 ```sql
 -- RANK() OVER (ORDER BY 컬럼 ASC / DESC) AS TT  
 -- 1 2 2 4  
@@ -31,6 +33,9 @@ FROM EMP;
 ```
 
 **RANK() OVER PARTITION BY 옵션**
+
+그룹별로 랭킹을 부여하는 함수
+
 ```sql
 -- RANK()OVER (PARTITION BY 컬럼 ASC/DESC) AS PK  
 -- 그룹 별로 랭킹 매길 때  
@@ -62,6 +67,9 @@ FROM EMP;
 * * *
 
 ### ROWNUM과 ROW_NUMBER()
+
+ROWNUM은 테이블 조회 결과마다 생성되는 번호이고, ROW_NUMBER() 함수는 이러한 ROWNUM 기준으로 순위를 부여한다.
+
 ```sql
 -- ROW NUM -- INSERT한 순서로 번호 매겨짐  
 SELECT ROWNUM, SAL, ENAME  
@@ -150,6 +158,7 @@ SELECT NUM FROM A;
 ### 페이징
 
 데이터베이스의 조회 결과를 원하는 범위만큼 출력하는 것.
+
 ```sql
 SELECT ROWNUM, SS.*  
 FROM  
