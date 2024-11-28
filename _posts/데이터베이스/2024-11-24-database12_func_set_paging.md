@@ -96,9 +96,9 @@ FROM EMP;
 ### 집합 
 
 집합(ANSI 표준이라 어디서든 사용 가능)  
-1.일반 합집합: UNION
+1\.일반 합집합: UNION
 
-2.정렬 없는 합집합: UNION ALL
+2\.정렬 없는 합집합: UNION ALL
 
 3\. 교집합: INTERSECT 4.차집합: MINUS
 

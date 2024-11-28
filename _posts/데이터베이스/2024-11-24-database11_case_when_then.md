@@ -23,7 +23,7 @@ EX.
 
 ```sql
 CASE WHEN THEN '값1'  
-\[ELSE\] '값2'
+[ELSE] '값2'
 ```
 
 CASE 절이 컬럼 이름이 되기 때문에 ALIAS 사용할 것

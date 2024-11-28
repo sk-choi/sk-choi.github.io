@@ -1,5 +1,5 @@
 ---
-title : "데이터베이스 SQL 구문 기초08(서브 쿼리:인라인 뷰와 스칼라, DECODE, PIVOT)"
+title : "데이터베이스 SQL 구문 기초08(인라인 뷰와 스칼라, DECODE, PIVOT)"
 date : 2024-11-21 21:34:30 +/-TTTT
 categories : 
 - Database
@@ -23,7 +23,7 @@ sidebar:
 인라인 뷰는 FROM 절에서 사용 가능한 일회성의 뷰 성격을 가진 서브쿼리를 의미한다.
 
 ```sql
-SELECT EMPNO, ENAME, (SAL \* 12 ) + 100 AS YSAL
+SELECT EMPNO, ENAME, (SAL * 12 ) + 100 AS YSAL
 
 FROM EMP
 
@@ -33,7 +33,7 @@ WHERE (SAL + 12) + 100 > 3000;
 이 쿼리를 아래와 같이 변경할 수 있다.
 
 ```sql
-SELECT \* FROM (
+SELECT * FROM (
 
 SELECT EMPNO, ENAME, (SAL + 12) + 100 AS YSAL
 

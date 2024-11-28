@@ -210,8 +210,7 @@ GROUP BY DEPTNO
 HAVING SUM(SAL) = (SELECT MAX(SUM(SAL)) FROM EMP GROUP BY DEPTNO);
 ```
 
-!! HAVING절에서도 GROUP 함수 사용이 가능하다.
-이 점을 몰라서 문제 푸는데 애를 먹었다.
+!! HAVING절에서도 GROUP 함수 사용이 가능하다. 이 점을 몰라서 문제 푸는데 애를 먹었다.
 
 * * *
 

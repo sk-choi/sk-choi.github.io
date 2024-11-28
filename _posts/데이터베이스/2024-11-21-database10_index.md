@@ -1,5 +1,5 @@
 ---
-title : "데이터베이스 SQL 구문 기초10(인덱스(INDEX) 그리고 쿼리 성능 비교(PLAN TABLE))"
+title : "데이터베이스 SQL 구문 기초10(INDEX)"
 date : 2024-11-21 22:24:30 +/-TTTT
 categories : 
 - Database
@@ -53,58 +53,6 @@ rowid: 실제 데이터가 어디에 있는지 확인할 수 있는 번호
 
 * * *
 
-### 쿼리 성능 비교
-
-**쿼리 1**
-
-```sql
-SELECT GEN, COUNT(1)
-
-FROM MEN
-
-WHERE GEN IN ('F','M')
-
-GROUP BY GEN
-
-HAVING COUNT(1) > 10
-```
-
-**쿼리 2**
-
-```sql
-SELECT GEN, COUNT(1)
-
-FROM MEN
-
-GROUP BY GEN
-
-HAVING COUNT(1) > 10 AND GEN IN ('F','M');
-```
-
-이 두 쿼리 중에서 좀 더 우수한 쿼리는 쿼리 1 이다.
-
-where절에서 먼저 범위 줄이는 방안이 중요하다.
-
-ORACLE SQL에서는 WHERE절이 GROUP BY절보다 실행 순서가 우선이기 때문이다.
-
-* * *
-
-### 계획 설명(plan table)
-
-f10누르면 된다.
-
-&nbsp;
-
-인덱스 확인 방법
-
-테이블->인덱스 버튼
-
-유니크: 자동으로 만들어진...
-
-pk에는 자동적으로 인덱스 생성 됨
-
-* * *
-
 ### 인덱스란??
 
 목차와 비슷한 것이라 생각하면 된다.
@@ -137,7 +85,7 @@ ORACLE DBMS는 버퍼에 이렇게 조회한 테이블을 쌓아 놨다가 출�
 
 바이너리 인덱스: 이진트리 구조를 활용한 인덱스
 
-<img src=":/dcaf999bf45e48388befbc09b9b53537" alt="3add7abb2570215e9b8e59c0b82366af.png" width="601" height="158" class="jop-noMdConv">
+<img src="https://velog.velcdn.com/images%2Femplam27%2Fpost%2F64290106-d927-4a82-9e08-8e52783c7dd3%2FDB%20%EC%9D%B8%EB%8D%B1%EC%8A%A4.jpg" width="601" height="158" class="jop-noMdConv">
 
 &nbsp;
 
@@ -176,135 +124,18 @@ ORACLE DBMS는 버퍼에 이렇게 조회한 테이블을 쌓아 놨다가 출�
 따라서
 
 ```sql
-SELECT \* FROM EMP WHERE DEPTNO = 20 AND EMPNO = 7876
+SELECT * FROM EMP WHERE DEPTNO = 20 AND EMPNO = 7876
 ```
 
 보다는
 
 ```sql
-SELECT \* FROM EMP WHERE EMPNO = 7876 AND DEPTNO = 20
+SELECT * FROM EMP WHERE EMPNO = 7876 AND DEPTNO = 20
 ```
 
 &nbsp;
 
 * * *
-
-### PLAN TABLE 활용해보기
-
-oracleexe/app/oracle/product/11.2.0/server/utlxplan.sql 파일을 활용.
-
-이 SQL 파일을 활용해서 PLAN_TABLE 데이터 베이스를 따로 만든다.
-
-**PLAN TABLE이란??**
-
-조회하고 실행한 것을 기록해 놓은 테이블
-
-옵티마이저의 일기장이라고 생각하면 된다.
-
-```sql
-SELECT * FROM PLAN_TABLE;
-```
-위의 쿼리를 실행해보면, PLAN_TABLE의 컬럼을 확인해 볼 수 있다.
-
-![img](https://github.com/user-attachments/assets/dae288fb-df6f-4c0b-ad5f-e8dc57df7ae8)
-
-이 중에서 plan_table의 id, parent_id, depth, position이 실행 결과를 저장해 놓는 주요 컬럼이다.
-
-&nbsp;
-
-id는 고유 식별 변호
-
-id 0번이 트리 제일 위에
-
-작업 id 1번이 그 다음
-
-depth 2에 2와 5가 있다.
-
-그리고 position을 비교해서 실행 순서를 알 수 있다.
-
-depth는 desc (깊이가 줄어들수록(낮을수록) 먼저 실행되기 때문)
-
-position은 asc으로 보자. (실행 순서이기 때문에 적은 숫자일수록 빨리 실행되는 것이다.)
-
-parent_id는 asc (부모 계층의 ID이므로 오름차순으로 확인해야 한다.)
-
-cadinality 행 개수에 대한 정보이다.
-
-&nbsp;
-
-### PLAN 쿼리 예시
-
-```sql
-EXPLAIN PLAN SET STATEMENT_ID = 'TESTEST1' FOR
-
-SELECT \* FROM EMP WHERE EMPNO = 7876 AND DEPTNO = 20;
-```
-
-&nbsp;
-
-조인이 쿼리에 가장 큰 부하를 차지한다.
-
-조인을 하나만 줄여도 sql의 성능이 좋아진다.
-
-&nbsp;
-
-```sql
-SELECT STATEMENT_ID, OPERATION, OBJECT_NAME, -- 작업 식별자
-
-OBJECT_TYPE, ID, PARENT_ID, DEPTH, POSITION, -- 실행 순서
-
-COST, CARDINALITY, BYTES, CPU_COST, IO_COST, -- 성능
-
-ACCESS_PREDICATES, FILTER_PREDICATES -- 작업 순서
-
-FROM PLAN_TABLE
-
-WHERE STATEMENT_ID IN ('TESTTEST2')
-
-ORDER BY STATEMENT_ID ASC, DEPTH DESC, PARENT_ID ASC, POSITION ASC;
-```
-
-&nbsp;
-
-ACCESS_PREDICATES는 버퍼에서 작동
-
-FILTER_PREDICATES 은 테이블에서 작동
-
-결국 FULL SCAN을 줄이기 위해선 FILTER_PREDICATES를 줄여야 함
-
-&nbsp;
-
-FROM 연산에서 많은 연산 발생
-
-JOIN도 연산에서 많은 연산 발생
-
-&nbsp;
-
-그래서 INLINE뷰를 통해 FROM절에서 서브쿼리를 통해 부하를 줄일 수 있다.
-
-&nbsp;
-
-```sql
-SELECT E.EMPNO, E.JOB, E.SAL, D.DNAME
-
-FROM EMP E, DEPT D WHERE E.DEPTNO = D.DEPTNO
-
-AND JOB IN (SELECT JOB FROM EMP WHERE DEPTNO = 10);
-```
-
-이 쿼리를
-
-```sql
-SELECT E.EMPNO, E.JOB, E.SAL, D.DNAME
-
-FROM (SELECT EMPNO, JOB, SAL, DEPTNO FROM EMP WHERE DEPTNO =10) E,
-
-DEPT D
-
-WHERE E.DEPTNO = D.DEPTNO;
-```
-
-으로 작성해 볼 수 있다.(잘못된 예시! 전자와 후자 결과가 다름)
 
 ### 인덱스 만들기
 
@@ -387,5 +218,9 @@ ALTER REBUILD INDEX IDX_EMP_DEPTNO REBUILD;
 &nbsp;
 
 **결합 인덱스**
+
+```sql
+CREATE INDEX IDX_EMP_DEPTNO ON EMP (DEPT, EMP)
+```
 
 WHERE 순서에 따라 성능 최적화가 달라진다.
