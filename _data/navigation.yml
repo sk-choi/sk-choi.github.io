@@ -65,9 +65,8 @@ sidebar-category:
         url: categories/books
 
   - title: "ETC"
-      children:
-        - title: "GIT"
-          url: categories/git
-        - title: "Blog"
-          url: categories/blog
-    
+    children:
+      - title: "GIT"
+        url: categories/git
+      - title: "Blog"
+        url: categories/blog
