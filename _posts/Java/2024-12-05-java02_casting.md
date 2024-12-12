@@ -1,5 +1,5 @@
 ---
-title : "[Java] 자바의 변수와 타입"
+title : "[Java] 자바의 캐스팅(casting)"
 date : 2024-12-05 21:09:30 +/-TTTT
 categories : 
 - Java
