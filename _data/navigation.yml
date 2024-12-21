@@ -70,3 +70,5 @@ sidebar-category:
         url: categories/git
       - title: "Blog"
         url: categories/blog
+      - title: "Error"
+        url: categories/error
